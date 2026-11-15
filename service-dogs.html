@@ -180,7 +180,10 @@
       </div>
 
       <div class="form-card">
-        <form data-ajax="true">
+        <form action="https://api.web3forms.com/submit" method="POST" data-ajax="true">
+          <input type="hidden" name="access_key" value="b2b1e29d-30dc-4905-be2c-327d78c8be84">
+          <input type="hidden" name="from_name" value="Summer's Dogs Service Dog Application">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           <div class="form-row">
             <div class="form-group">
               <label for="sd-first-name">First Name *</label>

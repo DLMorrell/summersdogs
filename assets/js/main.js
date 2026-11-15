@@ -89,27 +89,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Interactive Form Submissions with Client Validation & Toast
+  // Interactive Form Submissions with Real Endpoint Submission & Toast
   const ajaxForms = document.querySelectorAll('form[data-ajax="true"]');
   ajaxForms.forEach(form => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalText = submitBtn ? submitBtn.innerText : 'Submit';
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.innerText = 'Submitting...';
+        submitBtn.innerText = 'Sending...';
       }
 
-      setTimeout(() => {
-        showToast('Thank you! Your submission has been received. We will be in touch shortly.', 'success');
-        form.reset();
+      const action = form.getAttribute('action') || 'https://api.web3forms.com/submit';
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        const result = await response.json();
+
+        if (response.status === 200 && result.success) {
+          showToast('Thank you! Your message has been sent to our team.', 'success');
+          form.reset();
+        } else {
+          showToast(result.message || 'There was an issue sending your message. Please try again.', 'error');
+        }
+      } catch (err) {
+        showToast('Network error. Please try again or email summersdogstraining@gmail.com directly.', 'error');
+      } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.innerText = originalText;
         }
-      }, 700);
+      }
     });
   });
 });
