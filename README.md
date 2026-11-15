@@ -84,7 +84,7 @@ You can host this website virtually anywhere for free or low cost:
 
 ## ✉️ Connecting Forms (Contact & Applications)
 
-The forms on `contact.html`, `service-dogs.html`, and `helping-out.html` include client-side validation and immediate visual feedback. To receive submissions directly to your email (`summersdogs.com@gmail.com`), you can connect any free form endpoint:
+The forms on `contact.html`, `service-dogs.html`, and `helping-out.html` include client-side validation and immediate visual feedback. To receive submissions directly to your email (`summersdogstraining@gmail.com`), you can connect any free form endpoint:
 
 ### Formspree (Easiest)
 1. Register for free at [Formspree.io](https://formspree.io).
