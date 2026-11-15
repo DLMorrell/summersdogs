@@ -17,24 +17,14 @@ summersdogs/
 ├── health-testing.html                  # DNA (Embark), PennHIP & OFA health testing
 ├── ourpack.html                         # Team bios & canine profiles
 ├── gallery.html                         # Photo gallery with interactive lightbox
-├── shop.html                            # Store catalog overview
-├── cart.html                            # Shopping cart with localStorage state
 ├── contact.html                         # Contact details & direct inquiry form
-│
-├── shop/                                # Dedicated product detail pages
-│   ├── service-dog-vest.html
-│   ├── evaluation.html
-│   ├── mystery-bag.html
-│   ├── one-day-obedience-training.html
-│   └── six-week-obedience-training.html
 │
 └── assets/
     ├── css/
     │   └── style.css                    # Unified responsive stylesheet
     ├── js/
     │   ├── main.js                      # Navigation, gallery lightbox, toast alerts
-    │   └── cart.js                      # Cart management (localStorage, badge, checkout)
-    └── images/                          # All localized photography & brand logos
+        └── images/                          # All localized photography & brand logos
 ```
 
 ---
