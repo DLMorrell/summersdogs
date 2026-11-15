@@ -13,7 +13,7 @@ summersdogs/
 ├── index.html                           # Homepage & mission highlight
 ├── service-dogs.html                    # Service dog training, tasks, & sliding scale
 ├── obedience.html                       # 4-stage obedience curriculum & courses
-├── helping-out.html                     # Puppy raiser guide & donation sponsorship
+├── helping-out.html                     # Ways to help & donation sponsorship
 ├── health-testing.html                  # DNA (Embark), PennHIP & OFA health testing
 ├── ourpack.html                         # Team bios & canine profiles
 ├── gallery.html                         # Photo gallery with interactive lightbox
