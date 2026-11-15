@@ -981,19 +981,23 @@ textarea {
   }
 }
 
+/* Flanked Evaluation Layout */
 .evaluation-flanked-layout {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1.3fr 2fr 1.3fr; /* Gives photos 30% more width */
   gap: 1.5rem;
-  align-items: center; /* Keeps photos centered alongside the card instead of stretched tall */
+  align-items: center;
 }
 
 .evaluation-side-img {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
-  background-color: #e2e8f0;
-  aspect-ratio: 4 / 5; /* Or 1 / 1 (square), showing much more of the photo */
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 992px) {
