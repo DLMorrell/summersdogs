@@ -15,7 +15,6 @@ summersdogs/
 ├── obedience.html                       # 4-stage obedience curriculum & courses
 ├── helping-out.html                     # Ways to help & donation sponsorship
 ├── health-testing.html                  # DNA (Embark), PennHIP & OFA health testing
-├── ourpack.html                         # Team bios & canine profiles
 ├── gallery.html                         # Photo gallery with interactive lightbox
 ├── contact.html                         # Contact details & direct inquiry form
 │
